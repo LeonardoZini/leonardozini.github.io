@@ -11,30 +11,38 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.S. in AI Engineering, University of Modena and Reggio Emilia, 2024
+* B.S. in Computer Engineering, University of Modena and Reggio Emilia, 2021
+
+
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* September 2023: Intern
+  * University of Modena and Reggio Emilia
+  * Duties included: Developing a pipeline that includes image instance segmentation and image in-painting
+  * Supervisor: Professor Baraldi Lorenzo
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Machine Learning
+* Deep Learning
+* Computer Vision
+* Multimedia Data Processing
+* Big Data Analysis
+* Cybersecurity
+* Quantum Information Processing
+
+Techincal Skills
+======
+* Python
+  * Pytorch
+  * OpenCV
+* C/C++
+* Linux-based system
+* Git
+
+
 
 Publications
 ======
