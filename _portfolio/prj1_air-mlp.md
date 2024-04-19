@@ -4,7 +4,7 @@ excerpt: "This paper shows a new method for temporal correction of PM2.5 value m
 collection: portfolio
 ---
 
-Published in *Sensors*. Link [here](/publication/AirMLP-Turin)
+Published on *Sensors*. Link [here](/publication/AirMLP-Turin)
 
 ## Dataset
 
