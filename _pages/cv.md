@@ -19,9 +19,15 @@ Education
 Work experience
 ======
 * September 2023: Intern
-  * University of Modena and Reggio Emilia
-  * Duties included: Developing a pipeline that includes image instance segmentation and image in-painting
-  * Supervisor: Professor Baraldi Lorenzo
+  * AImageLab, University of Modena and Reggio Emilia
+  * Duties included: Developing a pipeline that includes image semantic segmentation, image inpainting and classification.
+  * Advisor: Dott. Lorenzo Baraldi
+
+Publications
+======
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
 Skills
 ======
@@ -40,14 +46,16 @@ Techincal Skills
   * OpenCV
 * C/C++
 * Linux-based system
-* Git
+* Git and GitHub
+* HPC platforms and SLURM scheduler
+* Gazebo, ROS
+* HTTP and MQTT
+* NetLogo
 
 
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
+
+
   
 

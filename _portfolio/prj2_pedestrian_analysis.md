@@ -1,6 +1,6 @@
 ---
 title: "Pedestrian Analysis"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/tracking.png'>"
+excerpt: "Computer vision pipeline about pedestrian detection and their analysis<br/><img src='/images/tracking.png'>"
 collection: portfolio
 ---
 
