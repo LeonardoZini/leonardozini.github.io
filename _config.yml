@@ -84,7 +84,7 @@ author:
   avatar           : "foto_cv_def.jpg"
   bio              : "AI Engineer"
   location         : "Modena, IT"
-  employer         : ""
+  employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=bflnHKQAAAAJ&hl=en"
   email            : "258378@studenti.unimore.it"
