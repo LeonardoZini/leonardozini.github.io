@@ -1,25 +1,23 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Leonardo Zini
+  label: PhD student
+  email: leonardo.zini@unimore.it
+  location: Modena, Italy
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: An italian PhD student in AI and Computer Vision at the University of Modena and Reggio Emilia. I am interested in deep learning, computer vision, and natural language processing. I have a strong background in computer science, and I am always eager to learn new things.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: LeonardoZini
     - network: LinkedIn
-      username: example
+      username: LeonardoZini
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    street: Via P. Vivarelli 10
+    city: Modena
+    region: Italy
+    postalCode: 41121
+    countryCode: IT
 
   sections:
     Education:
