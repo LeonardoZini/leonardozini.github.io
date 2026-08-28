@@ -27,6 +27,10 @@ TITLE_OVERRIDES = {
         "AirMLP: A Multilayer Perceptron Neural Network for Temporal Correction of PM2.5 Values in Turin"
     )
 }
+SELECTED_VENUES = {"ECCV", "ICPR", "NeurIPS"}
+PAPER_NOTES = {
+    "gramsr: visual feature conditioning for diffusion-based super-resolution": "Oral presentation"
+}
 
 
 @dataclass
@@ -254,11 +258,11 @@ def venue_abbreviation(metadata: dict[str, str], title: str) -> str:
     return ""
 
 
-def render_bibtex(records: list[ScholarRecord], max_selected: int) -> str:
+def render_bibtex(records: list[ScholarRecord]) -> str:
     entries: list[str] = ["---", "---", ""]
     used_keys: set[str] = set()
 
-    for index, record in enumerate(records):
+    for record in records:
         parser = DetailParser()
         parser.feed(fetch(record.detail_url))
         metadata = {key: normalise(value) for key, value in parser.fields.items()}
@@ -276,9 +280,11 @@ def render_bibtex(records: list[ScholarRecord], max_selected: int) -> str:
         abbreviation = venue_abbreviation(metadata, record.title)
         if abbreviation:
             lines.append(f"  abbr              = {{{abbreviation}}},")
+        if note := PAPER_NOTES.get(title.lower()):
+            lines.append(f"  note              = {{{bibtex_escape(note)}}},")
         lines.append(f"  google_scholar_id = {{{record.citation_id}}},")
         lines.append(f"  website           = {{{record.detail_url}}},")
-        if index < max_selected:
+        if abbreviation in SELECTED_VENUES:
             lines.append("  selected          = {true},")
         lines.append("}")
         entries.extend(lines)
@@ -304,7 +310,6 @@ def render_citations(records: list[ScholarRecord]) -> str:
 def main() -> int:
     arguments = argparse.ArgumentParser(description=__doc__)
     arguments.add_argument("--scholar-id", default=scholar_user_id())
-    arguments.add_argument("--max-selected", type=int, default=4)
     args = arguments.parse_args()
 
     profile_url = f"{BASE_URL}/citations?hl=en&user={args.scholar_id}&view_op=list_works&sortby=pubdate"
@@ -313,7 +318,7 @@ def main() -> int:
     if not parser.records:
         raise RuntimeError("Google Scholar returned no publication records. It may be rate limiting this request.")
 
-    BIBLIOGRAPHY_FILE.write_text(render_bibtex(parser.records, args.max_selected), encoding="utf-8")
+    BIBLIOGRAPHY_FILE.write_text(render_bibtex(parser.records), encoding="utf-8")
     CITATIONS_FILE.write_text(render_citations(parser.records), encoding="utf-8")
     print(f"Updated {len(parser.records)} publications from Google Scholar.")
     return 0
