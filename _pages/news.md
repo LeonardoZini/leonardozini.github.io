@@ -1,6 +1,7 @@
 ---
 layout: page
 title: news
+published: false
 permalink: /news/
 ---
 

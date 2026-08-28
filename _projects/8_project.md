@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false
 title: project 8
 description: an other project with a background image and giscus comments
 img: assets/img/9.jpg

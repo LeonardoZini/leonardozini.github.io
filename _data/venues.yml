@@ -1,9 +1,27 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#244d61"
 
-"Vision":
-  color: "#009f36"
+"ECCV":
+  url: https://eccv.ecva.net/
+  color: "#a14935"
+
+"ICPR":
+  url: https://www.icpr2026.org/
+  color: "#b35c36"
+
+"ICIAP":
+  url: https://www.iciap2025.it/
+  color: "#607d3b"
+
+"Sensors":
+  url: https://www.mdpi.com/journal/sensors
+  color: "#006da3"
+
+"MTA":
+  url: https://link.springer.com/journal/11042
+  color: "#385c7a"
