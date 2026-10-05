@@ -1,28 +1,36 @@
 metadata:
-  last_updated: "2026-08-28"
+  last_updated: "2026-10-05"
 papers:
+  _FxGoFyzp5QC:
+    citations: 0
+    title: "SVG-Score: Human-Aligned Evaluation of Text-to-SVG Generation"
+    year: "2026"
+  ufrVoPGSRksC:
+    citations: 0
+    title: "SPARK: Input-Conditioned Sparse Activation Modulation for Frozen DiT-based Super-Resolution"
+    year: "2026"
+  W7OEmFMy1HYC:
+    citations: 1
+    title: "A Scalable Vector Graphics Latent Space"
+    year: "2026"
   Y0pCki6q_DkC:
     citations: 0
     title: "An In-Depth Survey on Multimodal Automatic Fact-Checking Datasets"
     year: "2026"
   Tyk-4Ss8FVUC:
-    citations: 1
+    citations: 3
     title: "Diffusion Language Models: An Experimental Analysis"
     year: "2026"
   IjCSPb-OGe4C:
-    citations: 1
+    citations: 2
     title: "GramSR: Visual Feature Conditioning for Diffusion-Based Super-Resolution"
     year: "2026"
   qjMakFHDy7sC:
-    citations: 2
+    citations: 4
     title: "vHector and HeisenVec: Scalable Vector Graphics Generation Through Large Language Models"
     year: "2026"
-  W7OEmFMy1HYC:
-    citations: 0
-    title: "A Scalable Vector Graphics Latent Space"
-    year: "2026"
   2osOgNQ5qMEC:
-    citations: 1
+    citations: 3
     title: "SVGauge: Towards Human-Aligned Evaluation for SVG Generation"
     year: "2025"
   u5HHmVD_uO8C:
